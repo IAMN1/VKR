@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberLoungeV2.Android", "CyberLoungeV2.Android\CyberLoungeV2.Android.csproj", "{3489A15F-16D1-4979-B99B-C347C598DD28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberLoungeV2", "CyberLoungeV2\CyberLoungeV2.csproj", "{EAE13985-DC63-42FF-8FF0-00CF9E541D65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3489A15F-16D1-4979-B99B-C347C598DD28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3489A15F-16D1-4979-B99B-C347C598DD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3489A15F-16D1-4979-B99B-C347C598DD28}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3489A15F-16D1-4979-B99B-C347C598DD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3489A15F-16D1-4979-B99B-C347C598DD28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3489A15F-16D1-4979-B99B-C347C598DD28}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EAE13985-DC63-42FF-8FF0-00CF9E541D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE13985-DC63-42FF-8FF0-00CF9E541D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE13985-DC63-42FF-8FF0-00CF9E541D65}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EAE13985-DC63-42FF-8FF0-00CF9E541D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE13985-DC63-42FF-8FF0-00CF9E541D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE13985-DC63-42FF-8FF0-00CF9E541D65}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25317D1B-F555-4C7A-9F0C-9D36A8245CC8}
+	EndGlobalSection
+EndGlobal

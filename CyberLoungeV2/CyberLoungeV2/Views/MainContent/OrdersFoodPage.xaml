@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:localPage="clr-namespace:CyberLoungeV2.Views.MainContent.Food"
+             x:Class="CyberLoungeV2.Views.MainContent.OrdersFoodPage"
+             BarBackgroundColor="{StaticResource Key=NavBarPrimary}"
+             >
+
+    
+    <Shell.TitleView>
+        <Label Text="Меню" FontSize="27" Padding="0,20,0,0" TextColor="White"/>
+    </Shell.TitleView>
+    <TabbedPage.Children>
+        <localPage:DrinksPage/>
+        <localPage:SnaksPage/>
+        <localPage:SweetsPage/>
+    </TabbedPage.Children>
+</TabbedPage>

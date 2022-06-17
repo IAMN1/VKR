@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CyberLoungeV2.Views.MainContent.ProfilePage"
+             BackgroundColor="{StaticResource Key=PageBackgroundColor}">
+
+    <Shell.TitleView>
+        <Label Text="Профиль"
+               FontSize="27" 
+               Padding="60,10,0,0" 
+               TextColor="White"/>
+    </Shell.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="Icon_profile_edit.png" Clicked="EditProfileCommand"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightCyan">
+                <StackLayout Orientation="Vertical" Padding="0,30,0,0" VerticalOptions="Fill"
+                HorizontalOptions="Fill">
+                    <Image Source="id_card.png" HeightRequest="80" WidthRequest="80"/>
+                    <Label x:Name="lblLogin"  HorizontalOptions="Center" FontSize="50"/>
+                    <Label x:Name="lblname" HorizontalOptions="Center" FontSize="30"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="0,20,0,0">
+                <ListView x:Name="ProfileList"
+                    HasUnevenRows="True"
+                    ItemsSource="{Binding ProfileList}" 
+                          ItemSelected="OnItemUserInfoSelected"
+                          SeparatorColor="{StaticResource Key=Primary}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HeightRequest="50" Padding="10,0,0,0">
+                                    <Image Source="{Binding ImagePath}"  WidthRequest="30" HeightRequest="30" HorizontalOptions="Start"/>
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                        <Label Text="{Binding ValueVariable}" TextColor="DarkGray" Padding="10,0,0,0" VerticalOptions="CenterAndExpand" FontSize="15"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

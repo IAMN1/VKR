@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:localPages="clr-namespace:CyberLoungeV2.Views.MainContent.NewsViews"
+             x:Class="CyberLoungeV2.Views.MainContent.NewsPage"
+             BackgroundColor="{StaticResource Key=PageBackgroundColor}"
+             Shell.NavBarIsVisible="True"
+             Title="Новости">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="Icon_menu_user.png" Clicked="ClickedProfileCommand"/>
+        </ContentPage.ToolbarItems>
+        <!-- Главная стартовая страница после регистрации, предостовляющая доступ к основному контенту-->
+    <StackLayout Padding="20">
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <Frame WidthRequest="500" CornerRadius="20"  BackgroundColor="YellowGreen">
+                        <StackLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OnSalesCommand}" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Скидки и акции" FontSize="Large" HorizontalOptions="Center">
+                            </Label>
+                            <Image Source="Sales.png" HeightRequest="60" WidthRequest="50"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Frame WidthRequest="500" CornerRadius="20" BackgroundColor="CornflowerBlue">
+                        <StackLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OnPricesCommand}"  />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Наши цены и пакеты" FontSize="Large" HorizontalOptions="Center"/>
+                            <Image Source="HotPrices.png" HeightRequest="60" WidthRequest="50"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame WidthRequest="500" CornerRadius="20">
+                        <StackLayout >
+                            <Label Text="Депозит"  FontSize="Large" HorizontalOptions="Center"/>
+                            <Label x:Name="Depositlbl" FontSize="Large" HorizontalOptions="Center"/>
+                            <Image Source="Deposit.png" HeightRequest="40" WidthRequest="40"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame WidthRequest="500" CornerRadius="20">
+
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout>
+                                <Label Text="Турниры" FontSize="Large" HorizontalOptions="FillAndExpand"/>
+                                <Label Text="информация обо всех наших турнирах"/>
+                            </StackLayout>
+                            <Image Source="Tournaments.png" HeightRequest="80" WidthRequest="80"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

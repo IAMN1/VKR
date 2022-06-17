@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:CyberLoungeV2.Views"
+       Title="CyberLoungeV2"
+       x:Class="CyberLoungeV2.AppShell">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavBarPrimary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+                <Setter Property="Shell.NavBarHasShadow" Value="False"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+            
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <Tab Title="Новости" Icon="icon_feed.png">
+            <ShellContent  Route="NewsPage" ContentTemplate="{DataTemplate local:MainContent.NewsPage}"/>
+        </Tab>
+        <Tab Title="Бронирование"  Icon="Icon_menu_reservation.png">
+            <ShellContent Route="ReservationPage" ContentTemplate="{DataTemplate local:MainContent.ReservationPage}"/>
+        </Tab>
+        <Tab Title="Бар"  Icon="icon_menu_food.png">
+            <ShellContent Route="OrdersFoodPage" ContentTemplate="{DataTemplate local:MainContent.OrdersFoodPage}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

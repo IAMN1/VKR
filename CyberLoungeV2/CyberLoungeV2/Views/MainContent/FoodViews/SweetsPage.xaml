@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CyberLoungeV2.Views.MainContent.Food.SweetsPage"
+             xmlns:model="clr-namespace:CyberLoungeV2.Models.FoodModels"
+             BackgroundColor="{StaticResource Key=PageBackgroundColor}"
+             Title="Сладости">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="textColor">white</Color>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ListView x:Name="SweetsList" ItemsSource="{Binding SweetsList}"
+              ItemSelected="OnItemSelected"
+              HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Sweets">
+                <ViewCell>
+                    <Grid Padding="10">
+                        <Frame BackgroundColor="{StaticResource Key=Primary}" CornerRadius="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding ProductImage}" WidthRequest="90"/>
+                                <StackLayout VerticalOptions="Center" Padding="50,0,0,0" >
+                                    <Label Text="{Binding ProductName}" VerticalOptions="Center" FontSize="Large" TextColor="{StaticResource Key=textColor}"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding ProductDescription}" VerticalOptions="Center" FontSize="Large" TextColor="{StaticResource Key=textColor}"/>
+                                        <Label Text="{Binding Price}" VerticalOptions="Center" FontSize="Large" Padding="20,0,0,0" TextColor="{StaticResource Key=textColor}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

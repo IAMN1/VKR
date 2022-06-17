@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CyberLoungeV2.Views.MainContent.ReservationPage"
+             BackgroundColor="{StaticResource Key=PageBackgroundColor}"
+             Title="Бронирование">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="textColor">white</Color>
+            <Color x:Key="ColorGreen">#B5E61D</Color>
+            <Color x:Key="ColorRed">#FF3737</Color>
+            <Color x:Key="ColorPink">#EA3FF7</Color>
+
+            <x:Double x:Key="fontSizePlace">15</x:Double>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--На данной странице отображется бронирования
+        статус мест в обычном и vip-залах-->
+
+    <RefreshView IsRefreshing="{Binding IsBusy}"
+                 Command="{Binding RefreshViewCommand}">
+
+        <StackLayout Margin="11,15,11,12" VerticalOptions="FillAndExpand">
+
+            <!--Фрейм с информаций за что отвечает каждый цвет-->
+            <Frame CornerRadius="10" BackgroundColor="{StaticResource Key=Primary}" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Frame CornerRadius="10" BackgroundColor="{StaticResource Key=ColorGreen}">
+                        <Label Text="Свободен"/>
+                    </Frame>
+                    <Frame CornerRadius="10" BackgroundColor="{StaticResource Key=ColorPink}">
+                        <Label Text="Забронирован"/>
+                    </Frame>
+                    <Frame CornerRadius="10" BackgroundColor="{StaticResource Key=ColorRed}">
+                        <Label Text="Занят"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+
+            <ScrollView>
+                <StackLayout>
+
+                    <!--Фрейм обычного зала-->
+                    <Frame CornerRadius="10" BackgroundColor="{StaticResource Key=Primary}">
+
+                        <StackLayout>
+
+                            <Label HorizontalOptions="Center" FontSize="25" Text="Стандартный зал" TextColor="{StaticResource Key=textColor}"/>
+
+                            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center" 
+                         Padding="20">
+
+                                <Frame x:Name="F1" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped1" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl1" Text="1" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F2" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="OnTapped2"/>
+                                    </Frame.GestureRecognizers>
+                                    <Label  x:Name="lbl2" Text="2" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F3" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped3" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl3" Text="3" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F4" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped4" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl4" Text="4" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F5" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped5" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl5" Text="5" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center" 
+                         Padding="20">
+
+                                <Frame x:Name="F6" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped6" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl6" Text="6" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F7" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="OnTapped7"/>
+                                    </Frame.GestureRecognizers>
+                                    <Label  x:Name="lbl7" Text="7" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F8" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped8" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl8" Text="8" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F9" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped9" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl9" Text="9" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F10" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped10" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl10" Text="10" FontSize="Medium" HorizontalOptions="Center"/>
+                                </Frame>
+
+                            </StackLayout>
+                        </StackLayout>
+
+                    </Frame>
+
+                    <!--Фрейм Vip зала-->
+                    <Frame CornerRadius="10" BackgroundColor="{StaticResource Key=Primary}">
+
+                        <StackLayout>
+
+                            <Label HorizontalOptions="Center" FontSize="25" Text="Vip зал" TextColor="{StaticResource Key=textColor}"/>
+
+                            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center" 
+                         Padding="0,20,0,20">
+
+                                <Frame x:Name="F11" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped11" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl11" Text="11" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F12" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="OnTapped12"/>
+                                    </Frame.GestureRecognizers>
+                                    <Label  x:Name="lbl12" Text="12" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F13" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped13" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl13" Text="13" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F14" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped14" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl14" Text="14" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F15" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped15" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl15" Text="15" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center" 
+                         Padding="10">
+
+                                <Frame x:Name="F16" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped16" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl16" Text="16" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F17" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer  Tapped="OnTapped17"/>
+                                    </Frame.GestureRecognizers>
+                                    <Label  x:Name="lbl17" Text="17" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F18" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped18" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl18" Text="18" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F19" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped19" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl19" Text="19" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame x:Name="F20" CornerRadius="10">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnTapped20" />
+                                    </Frame.GestureRecognizers>
+                                    <Label x:Name="lbl20" Text="20" FontSize="15.5" HorizontalOptions="Center"/>
+                                </Frame>
+
+                            </StackLayout>
+                        </StackLayout>
+
+                    </Frame>
+
+                </StackLayout>
+            </ScrollView>
+
+            <Button Text="Забронировать" VerticalOptions="EndAndExpand" Clicked="OnButtonClicked" CornerRadius="10"/>
+
+        </StackLayout>
+    </RefreshView>
+
+</ContentPage>

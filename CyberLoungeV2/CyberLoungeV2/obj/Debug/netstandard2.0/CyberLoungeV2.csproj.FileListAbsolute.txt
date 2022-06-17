@@ -1,0 +1,58 @@
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\bin\Debug\netstandard2.0\CyberLoungeV2.deps.json
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\bin\Debug\netstandard2.0\CyberLoungeV2.dll
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\bin\Debug\netstandard2.0\CyberLoungeV2.pdb
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\Food\DrinksPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\NewsPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\News\PromotionsPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\News\TournamentsPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\OrdersFoodPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\ProfilePage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\ReservationPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\RegistrationPage.xaml.g.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.dll
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\refint\CyberLoungeV2.dll
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.pdb
+C:\Users\andre\OneDrive\Рабочий стол\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\ref\CyberLoungeV2.dll
+D:\programm\CyberLoungeV2\CyberLoungeV2\bin\Debug\netstandard2.0\CyberLoungeV2.deps.json
+D:\programm\CyberLoungeV2\CyberLoungeV2\bin\Debug\netstandard2.0\CyberLoungeV2.dll
+D:\programm\CyberLoungeV2\CyberLoungeV2\bin\Debug\netstandard2.0\CyberLoungeV2.pdb
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.csproj.AssemblyReference.cache
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.GeneratedMSBuildEditorConfig.editorconfig
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\FoodViews\DrinksPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\FoodViews\SnaksPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\FoodViews\SweetsPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\NewsPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\NewsViews\NewsChapter\PricesChapter\MainHall.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\NewsViews\NewsChapter\PricesChapter\VipHall.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\NewsViews\PricesPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\NewsViews\SalesPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\NewsViews\TournamentsPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\OrdersFoodPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\ProfilePage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\ProfileViews\ChangePasswordPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\MainContent\ReservationPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\Views\RegistrationPage.xaml.g.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.AssemblyInfoInputs.cache
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.AssemblyInfo.cs
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.csproj.CoreCompileInputs.cache
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\XamlC.stamp
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.dll
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\refint\CyberLoungeV2.dll
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\CyberLoungeV2.pdb
+D:\programm\CyberLoungeV2\CyberLoungeV2\obj\Debug\netstandard2.0\ref\CyberLoungeV2.dll

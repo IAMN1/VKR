@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CyberLoungeV2.Views.MainContent.NewsViews.SalesPage"
+             xmlns:model="clr-namespace:CyberLoungeV2.Models"
+             BackgroundColor="{StaticResource Key=PageBackgroundColor}"
+             NavigationPage.HasNavigationBar="True"
+             Title="Акции и скидки">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="textColor">white</Color>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <ListView x:Name="salesList" ItemsSource="{Binding SalesList}"
+              ItemSelected="OnItemSelected"
+              HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="model:Sales">
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Frame BackgroundColor="{StaticResource Key=Primary}" CornerRadius="10">
+                                <StackLayout>
+                                    <Image Source="{Binding Image}" WidthRequest="100"/>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding SalesName}" VerticalOptions="Center" FontSize="Large" TextColor="{StaticResource Key=textColor}" HorizontalOptions="Center"/>
+                                        <BoxView HeightRequest="1" Color="YellowGreen"/>
+                                        <Label Text="{Binding SalesDescription}" VerticalOptions="Center" FontSize="Large" TextColor="{StaticResource Key=textColor}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ScrollView>
+</ContentPage>

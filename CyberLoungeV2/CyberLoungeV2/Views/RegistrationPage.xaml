@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CyberLoungeV2.Views.RegistrationPage"
+             BackgroundColor="DarkGray"
+             >
+
+        <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="textColor">white</Color>
+        </ResourceDictionary>    
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        
+
+        <StackLayout  Padding="20,50,20,0">
+
+            <Frame HorizontalOptions="FillAndExpand" CornerRadius="40" BackgroundColor="{StaticResource Key=Primary}">
+                <Label Text="Регистрация" HorizontalOptions="Center" FontSize="Large" TextColor="{StaticResource Key=textColor}"/>
+            </Frame>
+
+            <StackLayout  Padding="10,50,10,40"  Margin="5,0,5,0">
+
+                <Frame BackgroundColor="{StaticResource Key=Primary}" HorizontalOptions="Fill" CornerRadius="30">
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+
+                        <Entry x:Name="LoginEntry" Placeholder="Login" BackgroundColor="{StaticResource Key=Primary}"
+                           TextColor="{StaticResource Key=textColor}" PlaceholderColor="{StaticResource Key=textColor}"/>
+
+                        <Entry x:Name="NameEntry" Placeholder="Name" BackgroundColor="{StaticResource Key=Primary}"
+                           TextColor="{StaticResource Key=textColor}" PlaceholderColor="{StaticResource Key=textColor}"/>
+
+                        <Entry x:Name="EmailEntry" Placeholder="Email" BackgroundColor="{StaticResource Key=Primary}" 
+                           TextColor="{StaticResource Key=textColor}" PlaceholderColor="{StaticResource Key=textColor}"/>
+
+                        <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True"
+                           BackgroundColor="{StaticResource Key=Primary}"
+                           TextColor="{StaticResource Key=textColor}"
+                           PlaceholderColor="{StaticResource Key=textColor}"/>
+
+                        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True"
+                           BackgroundColor="{StaticResource Key=Primary}"
+                           TextColor="{StaticResource Key=textColor}"
+                           PlaceholderColor="{StaticResource Key=textColor}"/>
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            
+            <Button x:Name="RegistrationBtn" Text="Зарегистрироваться"  CornerRadius="20" Clicked="RegistrateClicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
